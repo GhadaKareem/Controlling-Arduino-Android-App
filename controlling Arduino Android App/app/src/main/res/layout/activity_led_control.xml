@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.led.led.ledControl"
+    android:background="@drawable/back6"
+    style="?android:attr/imageWellStyle"
+    android:scrollbarThumbHorizontal="@drawable/back6"
+    android:scrollbarThumbVertical="@drawable/back6">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lumn"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/heel2"
+        android:id="@+id/rightButton"
+
+        android:background="@android:color/holo_blue_dark"
+        android:layout_centerInParent="false"
+        android:layout_alignTop="@+id/leftButton"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_toEndOf="@+id/backButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <ImageButton
+        android:src="@drawable/th2"
+        android:id="@+id/stopButton"
+        android:background="@android:color/holo_blue_dark"
+
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:fadeScrollbars="false"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="80dp"
+        android:layout_alignTop="@+id/rightButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/frontButton"
+        android:src="@drawable/heel2"
+        android:background="@drawable/back6"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/heel2"
+        android:id="@+id/leftButton"
+        android:background="@android:color/holo_blue_dark"
+
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/heel2"
+        android:id="@+id/backButton"
+        android:background="@android:color/holo_blue_dark"
+
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/stopButton"
+        android:layout_alignStart="@+id/stopButton" />
+
+
+</RelativeLayout>
